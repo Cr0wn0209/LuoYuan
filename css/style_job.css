@@ -1,0 +1,250 @@
+#page {
+	height: 1200px;
+}
+#tabAContent > div,#tabBContent > div {
+	display: none;
+	width: 100%;
+	height: auto;
+	padding-bottom: 10px;
+	background-color: transparent;
+}
+#tabAContent div.adiv,#tabBContent div.bdiv {
+	display: block;
+}
+#tabA li,#tabB li {
+	float: left;
+	display: block;
+	margin-bottom: -3px;
+	border-bottom: 3px solid transparent;
+	width: 100px;
+	height: 35px;
+	list-style-type: none;
+	background-color: transparent;
+	transition: border 0.3s,color 0.3s;
+}
+#tabA li.ali,#tabB li.bli {
+	border-bottom: 3px solid #ffa200;
+}
+#tabA,#tabB {
+	margin-top: 5px;
+}
+#tabA li,#tabB li {
+	cursor: pointer;
+}
+#tabAContent,#tabBContent {
+	width: 95%;
+	margin: 10px auto;
+}
+#tabA li p,#tabB li p {
+	margin:10px 0 0 0;
+	text-align: center;
+	font-size: 25px;
+	color: #999999;
+}
+#tabA li.ali p,#tabB li.bli p {
+	color: black;
+}
+.programBlock {
+	float: left;
+	position: relative;
+	margin: 10px 0 0 2.5%;
+	display: block;
+	background-color: white;
+	width: 30%;
+	height: 50px;
+	border: 1px solid transparent;
+	transition: border 0.5s !important;
+}
+.programBlock:hover {
+	border: 1px solid #ffa200;
+}
+.programBlock p {
+	position: absolute;
+	padding: 0;
+	margin:0;
+}
+.programBlock p:nth-of-type(1) {
+	top: 8px;
+	left: 20px;
+	color: #ffa200;
+	font-weight: bold;
+}
+.programBlock p:nth-of-type(2) {
+	top: 10px;
+	left: 120px;
+	color: black;
+	font-weight: bold;
+}
+.programBlock p:nth-of-type(3) {
+	top: 30px;
+	left: 23px;
+	color:#555555;
+}
+.missionDiv {
+	position: relative;
+	background-color: rgba(194,216,255,0.1);
+	width: 100%;
+	height: 150px;
+}
+#tabBContent > div > hr {
+	border: 1px dashed #eee;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.missionDiv > h3 {
+	position: absolute;
+	margin: 0;
+	top: 50px;
+	left: 20px;
+}
+.missionDiv > h3 > span {
+	color: #ffa200;
+}
+.missionDiv > .havePaid {
+	position: absolute;
+	margin: 0;
+	top: 50px;
+	left: 500px;
+}
+.missionDiv > .peopleJoin {
+	position: absolute;
+	margin: 0;
+	top: 70px;
+	left: 500px;
+}
+.missionDiv > .peopleJoin > span {
+	color: blue;
+}
+.missionDiv > .deadline {
+	position: absolute;
+	margin: 0;
+	top: 90px;
+	left: 500px;
+}
+.missionDiv > .deadline > span {
+	color: blue;
+}
+.missionDiv > .companyJoin {
+	position: absolute;
+	margin: 0;
+	bottom: 10px;
+	left: 20px;
+	width: 90%;
+}
+.missionDiv > .companyJoin > p {
+	float: left;
+	margin: 0;
+	color: #999;
+}
+.missionDiv > .joinNow {
+	position: absolute;
+	margin: 0;
+	top: 60px;
+	left: 600px;
+	background-color: #ffa200;
+	height: 30px;
+	width: 80px;
+}
+.missionDiv > .joinNow:hover {
+	color: white;
+}
+.missionDiv > .joinNow p {
+	width: 100%;
+	text-align: center;
+	margin: 8px auto;
+
+}
+.serviceDiv {
+	position: relative;
+	float: left;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	margin-top: 20px;
+	width: 30%;
+	height: 340px;
+	border:1px solid #eee;
+	box-shadow: 1px 1px 10px #ccc;
+}
+.serviceDiv > .servicePic {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -80px;
+	height: 160px;
+	width: 160px;
+	background-image: url(../pic/index/exp.png);
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+.serviceDiv > .servicePrice {
+	position: absolute;
+	top: 50%;
+	left: 25px;
+}
+.serviceDiv > .servicePrice > span {
+	font-size: 1.2em;
+	color: #ffa200;
+}
+.serviceDiv > .serviceCount {
+	position: absolute;
+	top: 51.7%;
+	right: 25px;
+	color: #999;
+}
+.serviceDiv > .serviceCount > span {
+	color: blue;
+}
+.serviceDiv > .serviceCompany {
+	position: absolute;
+	top: 60%;
+	left: 25px;
+}
+.serviceDiv > .serviceLocation {
+	position: absolute;
+	top: 76%;
+	left: 25px;
+	color: #ccc;
+}
+.serviceDiv > .serviceDiamond {
+	position: absolute;
+	top: 68%;
+	left: 25px;
+	width: 100px;
+	height: 20px;
+	background-image: url(../pic/index/diamond.png);
+	background-size: 20%;
+} 
+.serviceDiv > .serviceContact {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	background-color: #ffa200;
+	transition: background 0.3s,color 0.3s;
+}
+.serviceDiv > .serviceContact > p {
+	font-size: 25px;
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+.serviceDiv > .serviceContact:hover {
+	color: white;
+	background-color: #ffac1c;
+}
+.jobList {
+	display: block;
+	height: 40px;
+	border-bottom:1px solid #eee; 
+}
+.jobList:hover {
+	background-color: #eee;
+}
+.jobList > p {
+	float: left;
+	margin:15px 105px 0 5px;
+}
+.jobList > p:nth-of-type(4) {
+	color: #ffa200;
+	font-weight: bold;
+}

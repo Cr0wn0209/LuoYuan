@@ -1,0 +1,449 @@
+@font-face {
+			font-family: myFirstFont;
+			src: url('../font/PingHei-light.ttf')
+		}
+		body {
+			margin:0;
+			background-color: #dddddd;
+			font-family: myFirstFont;
+		}
+		#headBar {
+			width:100%; 
+			margin:0 auto;
+			background-color: #f7f7f7;
+			height: 70px;
+		}
+		#Bar {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		#headImg {
+			float: left;
+			width: 120px;
+			margin:5px 20px 5px 50px;
+		}
+		#headNav {
+			float: right;
+			width: auto;
+			height: 70px;
+			margin:0 0 0 0;
+		}
+		#headNav li {
+			height: 60px;
+			float: left;
+			padding: 0 0 0 0;
+			list-style-type: none;
+			border-top-style: solid;
+			border-width: 3px;
+			border-color: transparent;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:link,a:visited {
+			color: #333333;
+			transition: color 0.2s;
+		}
+		a:hover,a:active {
+			color: #ffa200; 
+		}
+		.navButton {
+			text-align: center;
+			height: 50px;
+			width: 170px;
+		}
+		#headNav li {
+			transition: border 0.2s;
+		}
+		#headNav li:hover{
+			border-top-style: solid;
+			border-width: 3px;
+			border-color: #ffa200;
+		}
+		#headNav1 p {
+			border-left-style: solid;
+			border-color: #999999;
+			border-width: 1px;
+		}
+		.navButton p {
+			height: 30px;
+			margin-top:12px;
+			padding-top: 10px; 
+			border-right-style: solid;
+			border-color: #999999;
+			border-width: 1px;
+		}
+
+		#page {
+			width: 1200px;
+			height: 1500px;
+			margin:10px auto;
+		}
+
+		#mainContent {
+			float: left;
+			height: 100%;
+			position: relative;
+			width:69%; 
+			margin: 5px 0 15px 0;
+			background-color:#f7f7f7;
+			box-shadow: 5px 5px 10px #aaaaaa;
+		}
+		#mainContentArticle {
+		}
+
+		@keyframes slideshow1 {
+			0%   {margin-left: 0px;}
+			3%   {margin-left: -500px;}
+			33%  {margin-left: -500px;}
+			36%  {margin-left: -1000px;}
+			66%  {margin-left: -1000px;}
+			70%  {margin-left: 0px;}
+			100% {margin-left: 0px;}
+		}
+		.imgBox,#slideUl,.slideLi {
+			margin:0;
+			padding:0;
+		}
+		#slideUl {
+			-webkit-animation-name:slideshow1;
+			-webkit-animation-duration: 10s;
+			-webkit-animation-iteration-count: infinite;
+			width: 1500px;
+			list-style-type: none;
+		}
+		
+		.slideLi {
+			float: left;
+		}
+		#slide {
+			float: left;
+			padding: 0;
+			margin:20px 0 0 40px;
+			width: 500px;
+			overflow: hidden;
+		}
+		.imgBox {
+			float: left;
+			text-align: center;
+			width: 500px;
+		}
+		.slideImg {
+			width: 500px;
+		}
+		#textBlock {
+			padding: 0;
+			margin:0;
+			position: absolute;
+			left:50px;
+		}
+		
+		#newsList {
+			height: 278px;
+			width: 235px;
+			float: left;
+			margin: 20px 0 0 10px;
+			background-color: white;
+		}
+		#newsListHeader p {
+			display: block;
+			background-color: #32363f;
+			margin: 0;
+			text-align: center;
+			color: #ffa200;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		#newsListLink a {
+			display: block;
+			width: 100%;
+			height: 25px;
+			padding-top: 5px;
+			text-align: center;
+			font-size: 15px;
+			border-bottom: thin solid #eeeeee;
+			transition: background-color 0.2s;
+		}
+		#newsListLink a:hover {
+			color: white;
+			background-color: #ffa200;
+		}
+
+		#list {
+			height: auto;
+			width: 90%;
+			margin:10px auto;
+		}
+		.listBlock {
+			margin: 10px 0 10px 0;
+			float: left;
+			width: 100%;
+			height: auto;
+			padding-bottom: 20px;
+			background-color: white;
+		}
+		#listBlockContent {
+			height: auto;
+			width: 95%;
+			margin: 10px auto;
+		}
+		.listBlockLink {
+			background-image: url(../pic/index/exp.png);
+			background-repeat: no-repeat;
+			background-size: 130px;
+			border-bottom: thin solid #eeeeee;
+			margin-bottom: 15px;
+			display: block;
+			width: 60%;
+			height: 150px;
+			font-size: 20px;
+			padding-left: 20%;
+			padding-right: 20%
+		}
+		.listBlockLink p {
+			text-indent: 25px;
+			font-size: 15px;
+			color: #999999;
+		}
+
+		.listHeader {
+			margin:0 0 0 2.5%;
+			padding: 0px;
+			border-bottom: 3px solid #eeeeee;
+			width: 95%;
+		}
+		.listHeaderContent {
+			font-size: 1.5em;
+			margin:10px 0 -3px 0px;
+			float: left;
+			border-bottom: 3px solid #ffa200;
+		}
+		.clear {
+			clear: both;
+		}
+		.listMore {
+			float: right;
+			margin:10px 0 -3px 0px;
+			padding: 10px 0 0 0;
+		}
+		#specialList {
+			margin:10px auto;
+			width: 95%;
+		}
+		#specialList a {
+			position: relative;
+			float: left;
+			background-image: url(../pic/index/exp.png);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: 100%;
+			height: 180px;
+			display: block;
+			width: 32%;
+			transition: background-size 0.3s,box-shadow 0.3s;
+		}
+
+		#specialList a:hover {
+			background-size: 110%;
+			box-shadow: 5px 5px 10px #cccccc;
+		}
+		#specialList a:hover p {
+			background-color: #ffa200;
+		}
+		#specialList a:nth-of-type(1),#specialList a:nth-of-type(2){
+			margin-right: 2%;
+		}
+		#specialList a p {
+			position: absolute;
+			top: 115px;
+			display: block;
+			padding-top: 15px;
+			height: 35px;
+			width: 100%;
+			color: white;
+			background-color: rgba(0,0,0,0.6);
+			text-align: center;
+			transition: background-color 0.3s;
+		}
+
+
+
+		#sideContent {
+			float: left;
+			height: 100%;
+			width: 30%;
+			margin: 5px 0 15px 1%;
+			background-color: white;
+			box-shadow: 5px 5px 10px #aaaaaa;
+		}
+		#searchBar {
+			width: 80%;
+			margin: 0 auto;
+			padding: 0;
+		}
+		#search {
+			-o-appearance:none;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			outline: 0;
+			background-image: url(../pic/index/search.png);
+			background-repeat: no-repeat;
+			background-position: 97% 55%;
+			width: 96%;
+			height: 25px;
+			margin: 30px 0 0 0;
+			border-radius:15px;
+			border: 2px solid #cccccc;
+			padding-left: 10px;
+			transition: border-color 1s;
+		}
+		#search:hover,#search:focus {
+			border-color:#ffa200;
+		}
+
+		#userBar {
+			width: 80%;
+			height: 30px;
+			margin:20px auto;
+		}
+		#userText a {
+			float: left;
+			padding: 5px 0 5px 0;
+			width: 49%;
+			display: block;
+			background-color: #eeeeee;
+			text-align: center;
+			transition: background-color 0.2s;
+		}
+		#userText a:hover {
+			background-color: #ffa200;
+			color: white;
+		}
+		#userText a:nth-of-type(1) {
+			margin-right: 2%;
+		}
+		#sideContent hr {
+			clear: both;
+			width: 90%;
+		}
+		.sideList {
+			width: 80%;
+			margin: 10px auto;
+		}
+		.sideListHeader {
+			height: 27px;
+			border-bottom: 3px solid #eeeeee;
+			margin-bottom: 10px;
+		}
+		.sideListHeader p {
+			float: left;
+			font-size: 25px;
+			margin: 0;
+			border-bottom: 3px solid #ffa200;
+
+		}
+		.sideListLink {
+			clear: both;
+		}
+		.sideListLink a {
+			position: relative;
+			height: 25px;
+			font-size: 20px;
+			padding-top: 10px;
+			display: block;
+			width: 100%;
+			text-indent: 10px;
+			border-bottom: thin solid #eeeeee;
+		}
+		.sideListLink a:before {
+			position: absolute;
+			top: 12px;
+			left: 0;
+			content: "";
+			border-left: 3px solid #ffa200;
+			height: 15px; 
+		}
+
+		#pageFooter {
+			clear: both;
+			width:100%;
+			height: 350px; 
+			margin:0 auto;
+			background-color: #32363f;
+			text-align: center;
+			font-variant: small-caps;
+		}
+		#pageFooter p {
+			color: white;
+			margin-bottom: 0px;
+		}
+
+		#contactBar {
+			margin: 0 auto;
+			width: 1280px;
+			height: 350px;
+			text-align: center;
+		}
+		#contactBar p:nth-of-type(1) {
+			margin: 0 0 0 0;
+			padding: 30px 0 15px 0;
+			font-size: 25px;
+			color: white;
+		}
+		#contactBar p:nth-of-type(2) {
+			line-height:20px;
+			font-size: 8px;
+			color: white;
+			height: 50px;
+			width: 500px;
+			margin: 0 auto;
+			word-break: break-all;
+		}
+		#contactBar form {
+			padding-top:20px; 
+		}
+		#email {
+			padding-left: 10px;
+			width: 450px;
+			height: 38px;
+			border: none;
+		}
+		#submit {
+			color: white;
+			font-weight: bold;
+			font-size: 15px;
+			width: 80px;
+			height: 40px;
+			border: none;
+			background-color: #6f7278;
+			margin: 0 0 0 -5px;
+		}
+		#submit:hover {
+			background-color: #888888;
+		}
+		#contactBarLink {
+			width: 200px;
+			height: 10px;
+			margin: 40px auto;
+		}
+		#contactBarLink a {
+			display: block;
+			width: 50px;
+			height: 25px;
+			margin: 0;
+			float: left;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		#contactBarLink a:nth-of-type(1) {
+			background-image:url(../pic/index/logoMini1.png); 
+		}
+		#contactBarLink a:nth-of-type(2) {
+			background-image:url(../pic/index/logoMini2.png);
+		}
+		#contactBarLink a:nth-of-type(3) {
+			background-image:url(../pic/index/logoMini3.png);
+		}
+		#contactBarLink a:nth-of-type(4) {
+			background-image:url(../pic/index/logoMini4.png);
+		}
